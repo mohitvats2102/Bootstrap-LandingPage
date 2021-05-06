@@ -1,0 +1,197 @@
+/*********************************************Normal selectors *************************************/
+/*style which i want to apply to all the elements on web page is defined in body*/
+body{
+  font-family: "Montserrat" sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Montserrat" sans-serif;
+  font-weight: bold;
+}
+
+p{
+  color: #8f8f8f;
+}
+
+/* HEADINGS */
+.big-heading{
+  font-family: "Montserrat" sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/*****************************************Class selectors *********************************************/
+.container-fluid{
+  padding: 7% 15%;
+}
+
+/*SECTION*/
+
+.colored-section{
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section{
+  background-color: #fff;
+}
+
+.btn{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* NAVIGATION BAR */
+.navbar{
+   padding:0 0 4.5rem; /*Top left-right bottom */
+}
+
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item{
+  padding: 0 18px;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Montserrat" sans-serif;
+  font-weight: 400;
+}
+
+/* DOWNLOAD BUTTONS */
+.download-btn{
+  margin: 5% 3% 5% 0;
+}
+
+
+/* TITLE IMAGE */
+.title-img{
+   width: 60%; /* will make the width of img 60% of its parent which in this case is div col-lg-6*/
+   transform: rotate(25deg);
+   position: absolute;
+   right: 30%;
+
+}
+
+.feature-box{
+
+  padding: 5%;
+
+}
+
+.icon{
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover{
+  color :#ff4c68;
+}
+
+/*Features SECTION*/
+.feature-title{
+  font-size: 1.5rem;
+}
+
+/********Testimonials SECTION  **********/
+.testimonial-img{
+  width: 15%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5
+}
+
+/************ press-section**************/
+
+.press-logo{
+  width: 13%;
+  margin: 20px 20px 50px;
+}
+
+.price-text{
+font-size: 3rem;
+line-height: 1.5
+}
+
+/*********************carousel section*********************/
+
+
+
+/* PRICING SECTION */
+.pricing-col{
+  padding: 3% 2%;
+}
+
+
+
+
+.social-icon{
+  margin: 20px 10px;
+}
+/*********************************************ID selectors *****************************/
+/* #title{
+Dont need this becoz we are targates container-fluid section of title below
+  text-align: left;
+} */
+
+#title .container-fluid{
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+#features{
+
+  position: relative;
+
+
+}
+
+#testimonials{
+
+  background-color: #ef8172;
+  /* padding: 7% 15%; */ /*Moved padding from here to inside the .carousel-item so that only our carousel-item have padding not the entire section so that our buttons get more wide spaces.*/
+  color: #fff;
+}
+
+#press{
+  background-color: #ef8172;
+
+  padding-bottom:1%;
+}
+
+/*********************PRICING SECTION *******************/
+#pricing{
+  padding: 100px;
+
+}
+
+
+
+
+@media (max-width:1028px) {
+  .title-img{
+    position: static;
+    transform: rotate(0deg);
+  }
+
+  #title{
+    text-align: center
+  }
+}
